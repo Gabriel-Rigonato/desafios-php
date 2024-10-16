@@ -48,7 +48,7 @@
             }
          } else {
             ?>
-            <div class="error">>
+            <div class="error">
                <p>A frase ou palavra não pode ser vazia</p>
             </div>
       <?php
