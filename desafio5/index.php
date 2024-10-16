@@ -9,6 +9,8 @@
 </head>
 
 <body>
+   <h2>Verificando se a palavra ou frase é um palíndromo: </h2>
+
 
    <form action="" method="post">
       <label for="word">Digite uma frase ou palavra:</label>
@@ -31,16 +33,24 @@
             $wordReverted = strrev($word);
 
             if ($wordReverted === $word) {
-               echo "$output é um palíndromo";
-            } else {
-               echo "$output não é um palíndromo";
+      ?>
+               <div class="resultInput">
+                  <p><?php echo $output . " é um palíndromo"; ?></p>
+               </div>
+
+            <?php } else { ?>
+
+               <div class="resultInput">
+                  <p><?php echo $output . " NÃO é um palíndromo"; ?></p>
+               </div>
+
+            <?php
             }
-         } else { ?>
-
-            <div>
-               <h5>A frase ou palavra não pode ser vazia</h1>
+         } else {
+            ?>
+            <div class="error">>
+               <p>A frase ou palavra não pode ser vazia</p>
             </div>
-
       <?php
          }
       }

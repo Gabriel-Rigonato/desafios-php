@@ -4,12 +4,13 @@ body {
    display: flex;
    justify-content: center;
    align-items: center;
+   flex-direction: column;
    height: 100vh;
 }
 
+
+
 form {
-   display: flex;
-   flex-direction: column;
    background-color: #fff;
    padding: 20px;
    border-radius: 10px;
@@ -42,7 +43,29 @@ button[type="submit"] {
    cursor: pointer;
 }
 
-#resultado {
+#result {
    margin-top: 20px;
    font-weight: bold;
+   text-align: center;
+   background-color: #fff;
+   color: #0a0708;
+   padding: 10px;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+   border-radius: 5px;
+}
+
+.resultInput {
+   font-weight: bold;
+   text-align: center;
+   background-color: #16df0fa1;
+   color: #0a0708;
+   padding: 10px;
+   border-radius: 5px;
+}
+
+.error {
+   color: #0a0708;
+   background-color: #e65050fa;
+   border-radius: 5px;
+   padding: 10px;
 }

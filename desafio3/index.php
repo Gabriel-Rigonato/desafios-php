@@ -9,6 +9,8 @@
 </head>
 
 <body>
+   <h2>Somando os números digitados: </h2>
+
 
    <form action="" method="post">
       <label for="number">Digite um número:</label>
@@ -34,12 +36,16 @@
                $counter = $counter + intval($number);
             }
 
-            echo "A soma dos números digitados é : " . $counter;
-         } else {
       ?>
+            <div class="resultInput">
+               <p><?php echo "A soma dos números digitados é : " . $counter; ?></p>
+            </div>
 
-            <div>
-               <h5>É necessário digitar um número.</h1>
+         <?php } else {
+         ?>
+
+            <div class="error">
+               <p>É necessário digitar um número.</p>
             </div>
 
       <?php

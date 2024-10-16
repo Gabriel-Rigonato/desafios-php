@@ -9,6 +9,7 @@
 </head>
 
 <body>
+   <h2>Removendo vogais das palavras: </h2>
 
    <form action="" method="post">
       <label for="word">Digite uma palavra:</label>
@@ -54,11 +55,14 @@
                }
             }
 
-            echo "Você digitou: " . $newWord;
-         } else { ?>
+      ?>
+            <div class="resultInput">
+               <p><?php echo "Você digitou: " . $newWord ?></p>
+            </div>
+         <?php } else { ?>
 
-            <div>
-               <h5>A palavra não pode ser vazia</h1>
+            <div class="error">
+               <p>A palavra não pode ser vazia</p>
             </div>
 
       <?php

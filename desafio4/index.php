@@ -9,6 +9,9 @@
 </head>
 
 <body>
+   <h2>Listando números e substituindo se divisível: </h2>
+
+
 
    <form action="" method="post">
       <label for="number">Digite um número:</label>
@@ -45,12 +48,16 @@
                }
             }
 
-            echo  $output;
-         } else {
       ?>
+            <div class="resultInput">
+               <p><?php echo  $output; ?></p>
+            </div>
 
-            <div>
-               <h5>É necessário digitar um número.</h1>
+         <?php } else {
+         ?>
+
+            <div class="error">
+               <p>É necessário digitar um número.</p>
             </div>
 
       <?php

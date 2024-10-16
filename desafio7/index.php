@@ -32,6 +32,8 @@ function someNumbers($number1, $number2)
 ?>
 
 <body>
+   <h2>Somando números entre os valores digitados: </h2>
+
 
    <form action="" method="post">
       <label for="number">Digite o primeiro valor:</label>
@@ -55,15 +57,15 @@ function someNumbers($number1, $number2)
             $result = someNumbers(intval($number1), intval($number2));
 
       ?>
-            <div>
-               <h4"><?php echo $result; ?></h4>
+            <div class="resultInput">
+               <p><?php echo "O resultado da soma entre os números é: " . $result; ?></p>
             </div>
 
          <?php
          } else { ?>
 
-            <div>
-               <h5>O numero 1 ou 2 não pode ser vazio</h1>
+            <div class="error">
+               <p>O numero 1 ou 2 não pode ser vazio</p>
             </div>
 
       <?php

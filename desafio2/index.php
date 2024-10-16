@@ -9,6 +9,7 @@
 </head>
 
 <body>
+   <h2>Verificando a maior palavra: </h2>
 
    <form action="" method="post">
       <label for="text">Digite uma frase:</label>
@@ -35,15 +36,16 @@
                   $biggestWord = $word;
                }
             }
-
-            echo "A maior palavra da sua frase é : " . $biggestWord;
-         } else {
       ?>
-
-            <div>
-               <h5>A frase não pode ser vazia</h1>
+            <div class="resultInput">
+               <p><?php echo "A maior palavra da sua frase é : " . $biggestWord; ?></p>
             </div>
+         <?php } else {
+         ?>
 
+            <div class="error">
+               <p>A palavra não pode ser vazia</p>
+            </div>
       <?php
          }
       }

@@ -25,6 +25,8 @@ function comparePalindrome($data)
 ?>
 
 <body>
+   <h2>Verificando se a palavra ou frase é um palíndromo ou pode ser um palíndromo: </h2>
+
 
    <form action="" method="post">
       <label for="word">Digite uma frase ou palavra:</label>
@@ -45,7 +47,11 @@ function comparePalindrome($data)
             $result = comparePalindrome($data);
 
             if ($result == true) {
-               echo "$output é um palíndromo";
+      ?>
+               <div class="resultInput">
+                  <p><?php echo "$output é um palíndromo"; ?></p>
+               </div>
+               <?php
             } else {
 
                $data = strtolower(preg_replace('/[^A-Za-z0-9]/', '', $data));
@@ -72,15 +78,22 @@ function comparePalindrome($data)
                }
 
                if ($couldBePalindrome == true) {
-                  echo "Pode ser um Palindromo";
-               } else {
-                  echo "$output não é um palíndromo";
-               }
+               ?>
+                  <div class="resultInput">
+                     <p><?php echo "Pode ser um Palindromo"; ?></p>
+                  </div>
+
+               <?php
+               } else { ?>
+                  <div class="resultInput">
+                     <p><?php echo "NÃO é ser um Palindromo"; ?></p>
+                  </div>
+            <?php    }
             }
          } else { ?>
 
-            <div>
-               <h5>A frase ou palavra não pode ser vazia</h1>
+            <div class="error">
+               <p>A frase ou palavra não pode ser vazia</p>
             </div>
 
       <?php
