@@ -1,6 +1,6 @@
 # Desafios PHP
 
-**Descrição:** Exercicios de PHP
+**Descrição:** Desafios de PHP
 
 ## Índice
 
