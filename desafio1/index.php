@@ -12,7 +12,7 @@
    <h2>Removendo vogais das palavras: </h2>
 
    <form action="" method="post">
-      <label for="word">Digite uma palavra:</label>
+      <label for="word">Digite uma palavra ou frase:</label>
       <input type="text" id="word" name="word">
       <button type="submit">Enviar</button>
    </form>
@@ -62,7 +62,7 @@
          <?php } else { ?>
 
             <div class="error">
-               <p>A palavra não pode ser vazia</p>
+               <p>A palavra ou frase não pode ser vazia</p>
             </div>
 
       <?php

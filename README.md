@@ -24,4 +24,8 @@
 
 1. Quando executar o projeto na porta 8080, será direcionado a pasta raiz, onde poderá escolher qual desafio quer executar primeiro.
 
+2. Quando acessar determinado projeto, para trocar é só alterar o número de 1 a 7 na url.
+
+3. Caso queira acessar um desafio direto é só utilizar a url : localhost:8080/desafio(número do desafio que gostaria de acessar de 1 a 7).
+
       

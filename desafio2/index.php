@@ -9,7 +9,7 @@
 </head>
 
 <body>
-   <h2>Verificando a maior palavra: </h2>
+   <h2>Verificando a maior palavra na frase: </h2>
 
    <form action="" method="post">
       <label for="text">Digite uma frase:</label>
@@ -44,7 +44,7 @@
          ?>
 
             <div class="error">
-               <p>A palavra não pode ser vazia</p>
+               <p>A palavra ou frase não pode ser vazia</p>
             </div>
       <?php
          }
